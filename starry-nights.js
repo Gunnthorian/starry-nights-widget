@@ -1,12 +1,17 @@
-/*file name of the star image thats in the starry-nights.widget folder*/
-background: 'bgstar.png',
+settings: {
+
+  background: 'bgstar.png',
+
+  intensity: 1,
+
+},
 
 command: 'date',
 
 refreshFrequency: 100000,
 
 render: function() {
-  return '<img id="starry-nights-img" src="starry-nights.widget/' + this.background + '">'
+  return '<img id="starry-nights-img" src="starry-nights.widget/' + this.settings.background + '">'
 },
 
 update: function(output) {
@@ -17,7 +22,7 @@ update: function(output) {
   var distime = Math.abs(timearray[0] - 12.5) - 6.5
   if (distime >= 0) {
     /*turns the 24 hour and 60 minute time cycles into values for the opacity (0 through 1) incorporates the minutes so its a smoother transition*/
-    var smotime = (distime / 5) + (Math.round(100 * (timearray[1] / 60)) / 1000) * 2
+    var smotime = ((distime / 5) + (Math.round(100 * (timearray[1] / 60)) / 1000) * 2) * this.settings.intensity
   } else {
     smotime = 0;
   }
