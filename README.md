@@ -26,7 +26,7 @@ How to change the image of stars?
 
 ## Tip
 
-The background image doesnt need to be stars! It can be ghosts, or monsters, or even big letters that scream GO TO SLEEP! The way this works is the later it is at night the higher the images opacity is, soooo the late at night it is the more the image shows up.
+The background image doesnt need to be stars! It can be ghosts, or monsters, or even big letters that scream GO TO SLEEP! The way this works is the later it is at night the higher the images opacity is, soooo the later at night it is the more the image shows up.
 
 ## Credits
 
